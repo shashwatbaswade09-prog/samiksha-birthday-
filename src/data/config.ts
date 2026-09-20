@@ -20,21 +20,21 @@ export const config = {
       chapter: "01",
       title: "The Beginning",
       date: "19th August",
-      image: "/assets/images/the-beginning.jpg",
+      image: "assets/images/the-beginning.jpg",
       text: "We met under the most ordinary circumstances, but there was nothing ordinary about you."
     },
     {
       chapter: "02",
       title: "The Gym",
       date: "2 Years Ago",
-      image: "/assets/images/the-gym.jpg",
+      image: "assets/images/the-gym.jpg",
       text: "My favourite time spent with you was in the gym 2 years ago. I remember going at 6pm everyday, and all my eyes and heart waited for was you entering the gym."
     },
     {
       chapter: "03",
       title: "Where We Are Now",
       date: "Today",
-      image: "/assets/images/where-we-are.png",
+      image: "assets/images/where-we-are.png",
       text: "Still here, admiring you everyday, living you everyday and loving you the most everyday."
     }
   ],
@@ -58,21 +58,21 @@ export const config = {
 
   // Scene 6: Memories (Camera Roll)
   gallery: [
-    { image: "/assets/memories/memory_1.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_2.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_3.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_4.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_5.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_6.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_7.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_8.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_9.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_10.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_11.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_12.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_13.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_14.jpg", caption: "", date: "" },
-    { image: "/assets/memories/memory_15.jpg", caption: "", date: "" }
+    { image: "assets/memories/memory_1.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_2.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_3.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_4.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_5.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_6.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_7.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_8.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_9.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_10.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_11.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_12.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_13.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_14.jpg", caption: "", date: "" },
+    { image: "assets/memories/memory_15.jpg", caption: "", date: "" }
   ],
 
   // Scene 7: Quiz
