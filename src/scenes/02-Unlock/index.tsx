@@ -12,6 +12,13 @@ export const Unlock = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (inputValue.trim() === config.unlockDate) {
+      // Play audio synchronously on user click to bypass browser restrictions
+      const audio = document.getElementById('bgm') as HTMLAudioElement;
+      if (audio) {
+        audio.volume = 0.4;
+        audio.play().catch(e => console.log("Audio blocked:", e));
+      }
+
       setStatus('success');
       setUnlocked(true);
       setTimeout(() => {
