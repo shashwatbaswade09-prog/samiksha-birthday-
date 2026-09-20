@@ -1,5 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import { useAppStore } from '../store/useAppStore';
+import { useEffect, useRef } from 'react';
 
 // We will import scenes here later
 import { Splash } from '../scenes/01-Splash';
@@ -16,9 +17,22 @@ import { Finale } from '../scenes/11-Finale';
 
 export const Experience = () => {
   const { currentScene } = useAppStore();
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  useEffect(() => {
+    // Start playing audio only after they pass the splash and unlock scenes
+    // because browsers block autoplay before user interaction
+    if (currentScene !== 'splash' && currentScene !== 'unlock') {
+      if (audioRef.current) {
+        audioRef.current.volume = 0.4; // Slightly lower volume for background music
+        audioRef.current.play().catch(e => console.log("Audio play blocked by browser:", e));
+      }
+    }
+  }, [currentScene]);
 
   return (
     <div className="relative w-full h-full min-h-[100dvh] bg-background text-ivory overflow-hidden">
+      <audio ref={audioRef} src="/assets/audio/bgm.mp3" loop />
       {/* Global Grain Overlay */}
       <div className="film-grain pointer-events-none" />
 
